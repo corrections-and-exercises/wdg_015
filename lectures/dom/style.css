@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(17, 44, 44);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  color: lightgray;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  color: lightgoldenrodyellow;
+  cursor: pointer;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+
+.card {
+  width: 300px;
+  background-color: burlywood;
+  margin: 1rem;
+  border-radius: 2px;
+
+  & img,
+  p {
+    margin: 1rem auto;
+  }
+
+  & img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+  }
+
+  & p {
+    font-size: 0.8rem;
+    width: 200px;
+    text-align: center;
+  }
+}
+
+#newsletter {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+
+  & legend {
+    color: lemonchiffon;
+    margin-left: 0.4rem;
+    text-transform: uppercase;
+  }
+
+  & input {
+    margin-block: 1rem;
+  }
+
+  & button {
+    padding: 0.2rem;
+  }
+}
+
+.active {
+  border-radius: 50%;
+  border: solid 5px lightgreen;
+}
