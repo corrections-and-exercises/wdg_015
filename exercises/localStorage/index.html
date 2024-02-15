@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Local Storage crash course</title>
+  </head>
+  <body>
+    <div class="block">
+      <h1>Local Storage crash course</h1>
+      Check out your local storage in the Application tab of the browser's
+      console (Or the Storage tab if you're on Firefox)!
+      <br />
+      <br />
+      The Web Storage API allows you to save {key: value} pairs in your
+      browser's cache. Local Storage data persists after the leaving the website
+      (it is bound to the url, so whenever you return to the same url your
+      localStorage will load up all data again). It is a property of your Window
+      global object, like the document.
+      <br />
+      <br />
+      For this exercise you'll have to:
+      <ol>
+        <li>Add items to localStorage with the "Store me" button</li>
+        <li>
+          Remove one specific item from localStorage with the "Clear One" button
+        </li>
+        <li>Show all items in localStorage with the "Show Storage" button</li>
+        <li>Clear localStorage with the "Clear All" button</li>
+      </ol>
+      <br />
+      <div class="linkWrapper">
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+          >Help</a
+        >
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
+          >Help</a
+        >
+      </div>
+    </div>
+
+    <div class="block results">
+      <form>
+        <input class="key" name="key" placeholder="Key name" />
+        <input class="value" name="value" placeholder="Value of key" />
+        <button class="store">Store me!</button>
+      </form>
+      <hr />
+
+      <form>
+        <input class="remove" name="value" placeholder="Key to remove" />
+        <button class="clearOne">Clear one key!</button>
+      </form>
+      <hr />
+
+      <button class="show">Show storage!</button>
+      <button class="clearAll">Clear all storage!</button>
+      <hr />
+      Display the data from Local Storage here
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

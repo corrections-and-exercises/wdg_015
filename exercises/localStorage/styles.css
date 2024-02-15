@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  background: #007398;
+  color: white;
+  padding: 0 30px;
+}
+
+.block {
+  background: white;
+  border-radius: 3px;
+  padding: 20px;
+  color: black;
+  margin: 20px;
+  width: 100%;
+}
+
+.linkWrapper,
+.results {
+  text-align: center;
+}
+
+li {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid cornflowerblue;
+  padding: 5px 10px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+hr {
+  margin: 2rem 0;
+}
