@@ -1,0 +1,50 @@
+@host = http://localhost:8000
+
+GET {{host}}
+
+###
+POST {{host}}
+
+###
+PUT {{host}}
+
+###
+DELETE {{host}}
+
+###
+GET {{host}}/hello
+
+###
+GET {{host}}/data
+
+###
+GET {{host}}/html
+
+###
+GET {{host}}/user/100?sort=true&language=engl
+
+### 
+GET {{host}}/books
+
+###
+GET {{host}}/books/9781593277574
+
+###
+POST {{host}}/books
+content-type: application/json
+
+{
+    "isbn": "12345",
+    "title": "my first book"
+}
+###
+
+PUT {{host}}/books/9781484242216
+content-type: application/json
+
+{
+    "title": "not my book"
+}
+
+###
+DELETE {{host}}/books/9781484242216
