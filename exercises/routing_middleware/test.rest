@@ -1,0 +1,21 @@
+@host = http://localhost:8000
+
+###
+POST {{host}}/users
+Content-Type: application/json
+
+{
+    "first_name": "red",
+    "last_name": "doe"
+}
+
+###
+POST {{host}}/token/16
+Content-Type: application/json
+
+{
+    "token": "dead"
+}
+
+###
+GET {{host}}/verify/reff
