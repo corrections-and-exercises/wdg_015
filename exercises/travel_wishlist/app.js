@@ -8,8 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-app.use('/static', express.static('assets'));
-
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
